@@ -15,6 +15,15 @@ li {
   text-decoration: none;
 }
 
+.navigation-links li {
+  margin: 20px 0px;
+}
+
+li :hover, a :hover {
+  background-color: rgba(121, 201, 255, 0.5);
+  color: blue;
+}
+
 main {
   text-align: center;
 }
@@ -22,8 +31,21 @@ main {
 .social-media-icons {
   align-items: center;
   justify-content: space-around;
-  /* border: dashed 1px black; */
   display: flex;
+}
+.social-media-icons a {
+  margin: 30px 10px;
+}
+
+.second-nav-title {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-left: 20px;
+  margin: 30px 10px;
+}
+
+.second-nav-ul li {
+  margin: 20px 0px;
 }
 
 .header-nav2 {
@@ -31,6 +53,19 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+}
+
+.tags {
+  font-weight: 700;
+}
+
+.space-tags {
+  /*  border:solid 1px black; */
+  height: 7rem;
+  max-width: 100%;
+}
+.space-tags gear-svg {
+  color: rgb(46, 46, 46);
 }
 
 .dev-community {
@@ -43,6 +78,14 @@ main {
 .community {
   display: flex;
   justify-content: space-between;
+  /*     border: solid 1px black; */
+  margin: 10px 0px;
+  max-width: 90%;
+}
+
+.title-community {
+  color: rgb(162, 133, 105);
+  font-weight: 100;
 }
 
 .dots-menu {
@@ -53,9 +96,23 @@ main {
 .tag-img-sr {
   display: flex;
   align-self: center;
+  justify-content: center;
   border-radius: 15px;
   max-height: 90%;
   max-width: 90%;
+}
+
+.forem {
+  display: flex;
+  justify-content: space-between;
+  /*     border: solid 1px black; */
+  margin: 10px 0px;
+  max-width: 90%;
+}
+
+.title-forem {
+  color: rgb(162, 133, 105);
+  font-weight: 100;
 }
 
 .dev-forem {
