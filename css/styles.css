@@ -124,61 +124,95 @@ html {
   align-items: center;
   justify-content: center;
 }
-
-.imgTop {
+.homeFeed .imgTop {
   display: flex;
   height: auto;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
-
-img {
-  width: 60%;
+.homeFeed .imgTop img {
+  width: 49%;
   height: auto;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   align-items: center;
   justify-content: center;
 }
-
-.profileImgTxt {
+.homeFeed .profileImgTxt {
   display: inline-flex;
   padding: 0.5rem;
   flex-wrap: wrap;
   font-size: 0.9rem;
   height: -moz-fit-content;
   height: fit-content;
-  width: 37.5rem;
+  width: 31rem;
 }
-
-img {
+.homeFeed .profileImgTxt img {
   border-radius: 0.4rem;
   width: 2rem;
   height: auto;
   display: flex;
 }
-
-p {
+.homeFeed .profileImgTxt p {
   margin-left: 0.5rem;
 }
-
-span {
+.homeFeed .profileImgTxt span {
   margin-left: 0.5rem;
   opacity: 0.5;
 }
-
-.postTxt {
+.homeFeed .postTxt {
   display: flex;
-  width: 37.5rem;
+  flex-direction: column;
+  align-items: start;
+  width: 31rem;
+  height: rem;
+  margin-left: 16rem;
+  position: relative;
+}
+.homeFeed .postTxt .postsHashtags {
+  display: flex;
+  width: 16.5rem;
   height: auto;
-  margin-left: 12.5rem;
+  margin-left: 1.6rem;
+  gap: 0.5rem;
 }
-
-h4 {
+.homeFeed .postTxt h4 {
+  height: auto;
+  width: 50%;
+  margin-left: 1.5rem;
+}
+.homeFeed .postTxt a {
+  text-decoration: none;
+  color: gray;
+}
+.homeFeed .postTxt .emojisReactions {
+  display: flex;
+  flex-direction: row;
+}
+.homeFeed .postTxt .emojisReactions .collageEmojis {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+}
+.homeFeed .postTxt .emojisReactions .iconComments {
+  display: flex;
+  flex-direction: row;
   height: 1rem;
-  margin-left: 2.5rem;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
 }
-
-.postHashtags {
+.homeFeed .postTxt .emojisReactions .timeReadI {
+  display: flex;
+  flex-direction: row;
+  height: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 6rem;
+  font-size: 0.8rem;
+  gap: 0.5rem;
+}
+.homeFeed .commentsSection {
   display: flex;
 }/*# sourceMappingURL=styles.css.map */
