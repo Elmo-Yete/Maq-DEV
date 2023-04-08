@@ -26,14 +26,15 @@ html {
   width: 35%;
   min-width: 449px;
 }
-.blueBox .blueBox__logoDev {
+
+.blueBox__logoDev {
   margin-top: 2rem;
   margin-left: 1rem;
   display: flex;
   height: 5rem;
   width: 10rem;
 }
-.blueBox .blueBox__logoDev img {
+.blueBox img {
   width: 50%;
   height: auto;
 }
@@ -64,7 +65,7 @@ html {
   justify-content: center;
   width: 100%;
 }
-.blueBox .yellowBox .yellowBox__emojiTxt1 {
+.blueBox .yellowBox__emojiTxt1 {
   background-color: rgba(37, 150, 190, 0.4);
   border-radius: 0.3rem;
   margin-top: 0.5rem;
@@ -74,7 +75,7 @@ html {
   height: auto;
   width: 75%;
 }
-.blueBox .yellowBox .yellowBox__emojiTxt2 {
+.blueBox .yellowBox__emojiTxt2 {
   background-color: rgba(37, 150, 190, 0.4);
   border-radius: 0.3rem;
   margin-top: 0.5rem;
@@ -84,7 +85,7 @@ html {
   height: auto;
   width: 75%;
 }
-.blueBox .yellowBox .yellowBox__emojiTxt3 {
+.blueBox .yellowBox__emojiTxt3 {
   background-color: rgba(37, 150, 190, 0.4);
   border-radius: 0.3rem;
   margin-top: 0.5rem;
@@ -103,17 +104,18 @@ html {
   justify-content: end;
   width: 27%;
 }
-.interReact .interReact__threeAnc {
+
+.interReact__threeAnc {
   display: flex;
   margin-left: 1rem;
   justify-content: space-between;
   gap: 1rem;
 }
-.interReact .interReact__threeAnc a {
+.interReact a {
   text-decoration: none;
   color: gray;
 }
-.interReact .interReact__threeAnc .Relevante {
+.interReact .Relevante {
   color: black;
 }
 
@@ -122,21 +124,24 @@ html {
   align-items: center;
   justify-content: center;
 }
-.homeFeed .imgTop {
+
+.imgTop {
   display: flex;
   height: auto;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
-.homeFeed .imgTop img {
+
+img {
   width: 60%;
   height: auto;
   border-radius: 0.3rem;
   align-items: center;
   justify-content: center;
 }
-.homeFeed .profileImgTxt {
+
+.profileImgTxt {
   display: inline-flex;
   padding: 0.5rem;
   flex-wrap: wrap;
@@ -145,29 +150,35 @@ html {
   height: fit-content;
   width: 37.5rem;
 }
-.homeFeed .profileImgTxt img {
+
+img {
   border-radius: 0.4rem;
   width: 2rem;
   height: auto;
   display: flex;
 }
-.homeFeed .profileImgTxt p {
+
+p {
   margin-left: 0.5rem;
 }
-.homeFeed .profileImgTxt span {
+
+span {
   margin-left: 0.5rem;
   opacity: 0.5;
 }
-.homeFeed .postTxt {
+
+.postTxt {
   display: flex;
   width: 37.5rem;
   height: auto;
   margin-left: 12.5rem;
 }
-.homeFeed .postTxt h4 {
+
+h4 {
   height: 1rem;
   margin-left: 2.5rem;
 }
-.homeFeed .postTxt .postHashtags {
+
+.postHashtags {
   display: flex;
 }/*# sourceMappingURL=styles.css.map */

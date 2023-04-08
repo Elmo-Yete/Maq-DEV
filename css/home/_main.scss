@@ -24,7 +24,8 @@ html{
     width: 35%;
     min-width: 449px;
 }
-    & .blueBox__logoDev{
+    .blueBox{
+    &__logoDev {
         margin-top: 2rem  ;  
         margin-left: 1rem;
         display: flex;
@@ -91,6 +92,7 @@ html{
             height: auto;
             width: 75%;
         }
+    }
 .interReact{ 
     display: flex;
     margin-left: 14rem;
@@ -99,7 +101,8 @@ html{
     justify-content: end;
     width: 27%;
 }
-    & .interReact__threeAnc{
+    .interReact{
+    &__threeAnc {
         display: flex;
         margin-left: 1rem;
         justify-content: space-between;
@@ -112,27 +115,28 @@ html{
         & .Relevante { 
             color: black;
         }
+    }
 .homeFeed { 
     // background: red
     display: inline-block;
     align-items: center;
     justify-content: center;
 }
-    & .imgTop { 
+    .imgTop { 
         display: flex;
         height: auto;
         width: 100%;
         align-items: center;
         justify-content: center;
     }
-        & img { 
+        img { 
             width: 60%;
             height: auto;
             border-radius: .3rem;
             align-items: center;
             justify-content: center;
         }
-    & .profileImgTxt { 
+    .profileImgTxt { 
         // background: green
         display: inline-flex;
         padding: .5rem;
@@ -141,31 +145,31 @@ html{
         height: fit-content;
         width: 37.5rem;
     }
-        & img { 
+        img { 
             border-radius: .4rem;
             width: 2rem;
             height: auto;
             display: flex;
         }
-        & p { 
+        p { 
             margin-left: .5rem;
         }
-        & span { 
+        span { 
             margin-left: .5rem;
             opacity: .5;
         }
-    & .postTxt { 
+    .postTxt { 
         // background: yellow
         display: flex;
         width: 37.5rem;
         height: auto;
         margin-left: 12.5rem;
     }
-        & h4 { 
+        h4 { 
             // background: blue
             height: 1rem;
             margin-left: 2.5rem;
         }
-        & .postHashtags { 
+        .postHashtags { 
             display: flex;
         }
