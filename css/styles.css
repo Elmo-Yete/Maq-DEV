@@ -1,11 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body,
-html {
-  background: white;
-  font-size: 16px;
+.home-link {
+  text-decoration: none;
   text-align: center;
 }/*# sourceMappingURL=styles.css.map */
