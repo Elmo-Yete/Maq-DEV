@@ -6,25 +6,168 @@
 
 body,
 html {
+  padding: 0;
+  margin: 0;
   background: white;
   font-size: 16px;
   text-align: center;
+  width: 100%;
 }
 
-.bluebox {
+.blueBox {
+  align-items: center;
   background: #404cdc;
+  border-radius: 0.5rem;
+  display: inline-block;
+  height: auto;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 35%;
+  min-width: 449px;
+}
+.blueBox .blueBox__logoDev {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  display: flex;
+  height: 5rem;
+  width: 10rem;
+}
+.blueBox .blueBox__logoDev img {
+  width: 50%;
+  height: auto;
+}
+.blueBox .h2Title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  text-align: justify;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  justify-content: start;
+  width: 17rem;
+}
+.blueBox p {
+  color: white;
+  text-align: justify;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  justify-content: start;
+  width: 15rem;
+}
+.blueBox .yellowBox {
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+.blueBox .yellowBox .yellowBox__emojiTxt1 {
+  background-color: rgba(37, 150, 190, 0.4);
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+  padding: 0.2rem;
+  padding-bottom: 0.5rem;
+  height: auto;
+  width: 75%;
+}
+.blueBox .yellowBox .yellowBox__emojiTxt2 {
+  background-color: rgba(37, 150, 190, 0.4);
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+  padding: 0.2rem;
+  padding-bottom: 0.5rem;
+  height: auto;
+  width: 75%;
+}
+.blueBox .yellowBox .yellowBox__emojiTxt3 {
+  background-color: rgba(37, 150, 190, 0.4);
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+  padding: 0.2rem;
+  padding-bottom: 0.5rem;
+  height: auto;
+  width: 75%;
+}
+
+.interReact {
+  display: flex;
+  margin-left: 14rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: end;
+  width: 27%;
+}
+.interReact .interReact__threeAnc {
+  display: flex;
+  margin-left: 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.interReact .interReact__threeAnc a {
+  text-decoration: none;
+  color: gray;
+}
+.interReact .interReact__threeAnc .Relevante {
+  color: black;
+}
+
+.homeFeed {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.homeFeed .imgTop {
   display: flex;
   height: auto;
-  width: 50%;
-  height: 40%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
-.bluebox.bluebox__logo-dev {
-  background: red;
+.homeFeed .imgTop img {
+  width: 60%;
+  height: auto;
+  border-radius: 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
+.homeFeed .profileImgTxt {
+  display: inline-flex;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 37.5rem;
+}
+.homeFeed .profileImgTxt img {
+  border-radius: 0.4rem;
+  width: 2rem;
+  height: auto;
   display: flex;
-  height: 1rem;
-  width: 1rem;
 }
-.bluebox.bluebox__logo-dev img {
-  height: 10px;
-  width: 10px;
+.homeFeed .profileImgTxt p {
+  margin-left: 0.5rem;
+}
+.homeFeed .profileImgTxt span {
+  margin-left: 0.5rem;
+  opacity: 0.5;
+}
+.homeFeed .postTxt {
+  display: flex;
+  width: 37.5rem;
+  height: auto;
+  margin-left: 12.5rem;
+}
+.homeFeed .postTxt h4 {
+  height: 1rem;
+  margin-left: 2.5rem;
+}
+.homeFeed .postTxt .postHashtags {
+  display: flex;
 }/*# sourceMappingURL=styles.css.map */
