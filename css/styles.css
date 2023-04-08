@@ -1,5 +1,11 @@
-*, html {
+* {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+}
+
+body,
+html {
+  background: white;
+  font-size: 16px;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
