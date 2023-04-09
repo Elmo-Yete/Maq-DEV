@@ -14,7 +14,14 @@ li {
   text-decoration: none;
 }
 
+.nav-left {
+  display: flex;
+  justify-content: start;
+}
+
 .navigation-links li {
+  display: flex;
+  justify-content: start;
   margin: 20px 0px;
 }
 
@@ -41,9 +48,12 @@ main {
   font-weight: 700;
   padding-left: 20px;
   margin: 30px 10px;
+  text-align: start;
 }
 
 .second-nav-ul li {
+  display: flex;
+  justify-content: start;
   margin: 20px 0px;
 }
 
@@ -136,9 +146,9 @@ main {
   display: inline-block;
   height: auto;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem 3rem;
   margin-top: 1rem;
-  width: 35%;
+  width: 100%;
   min-width: 449px;
 }
 
@@ -164,7 +174,7 @@ main {
   margin-left: 1rem;
   margin-top: 0.5rem;
   justify-content: start;
-  width: 17rem;
+  width: 75%;
 }
 .blueBox p {
   color: white;
@@ -172,48 +182,51 @@ main {
   margin-left: 1rem;
   margin-top: 0.5rem;
   justify-content: start;
-  width: 16rem;
+  width: 19rem;
+}
+.blueBox .getIntoSymbol {
+  width: 1rem;
 }
 .blueBox .yellowBox {
   align-items: center;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   justify-content: center;
-  width: 100%;
+  width: 90%;
+  margin-left: 2rem;
 }
 .blueBox .yellowBox__emojiTxt1 {
+  display: flex;
+  justify-content: space-between;
   background-color: rgba(37, 150, 190, 0.4);
   border-radius: 0.3rem;
   margin-top: 0.5rem;
-  margin-left: 1rem;
-  padding: 0.2rem;
+  padding: 0.1rem;
   padding-bottom: 0.5rem;
   height: auto;
-  width: 90%;
+  width: 100%;
 }
 .blueBox .yellowBox__emojiTxt2 {
+  display: flex;
+  justify-content: space-between;
   background-color: rgba(37, 150, 190, 0.4);
   border-radius: 0.3rem;
   margin-top: 0.5rem;
-  margin-left: 1rem;
-  padding: 0.2rem;
+  padding: 0.1rem;
   padding-bottom: 0.5rem;
   height: auto;
-  width: 90%;
-}
-.blueBox .yellowBox__emojiTxt2 p {
   width: 100%;
-  margin-top: 1rem;
 }
 .blueBox .yellowBox__emojiTxt3 {
+  display: flex;
+  justify-content: space-between;
   background-color: rgba(37, 150, 190, 0.4);
   border-radius: 0.3rem;
   margin-top: 0.5rem;
-  margin-left: 1rem;
-  padding: 0.2rem;
+  padding: 0.1rem;
   padding-bottom: 0.5rem;
   height: auto;
-  width: 90%;
+  width: 100%;
 }
 
 .interReact {
@@ -239,8 +252,6 @@ main {
 
 .homeFeed {
   display: inline-block;
-  align-items: center;
-  justify-content: center;
 }
 .homeFeed .imgTop {
   display: flex;
@@ -387,6 +398,61 @@ main {
 .homeFeed .commentsSection .commentAncor .aOpenComments a {
   text-decoration: none;
   color: black;
+}
+
+.navbar {
+  height: 55px;
+  box-shadow: 0px 1px 1px rgb(200, 199, 199);
+}
+.navbar__devToLogo img {
+  border-radius: 4px;
+  height: 40px;
+  width: 50px;
+}
+.navbar .offcanvas {
+  overflow-y: auto;
+}
+.navbar__containerLogoAndSearchBar .wrapper-search {
+  height: 40px;
+  width: 150%;
+}
+.navbar__containerLogoAndSearchBar .wrapper-search .inputSearch {
+  border: 1.5px solid rgb(212, 212, 212);
+  height: 40px;
+}
+.navbar .buttonSearch {
+  height: 40px;
+}
+.navbar__userAcctions {
+  height: 40px;
+}
+.navbar__userAcctions .btnCreatePost {
+  color: rgb(60, 74, 223);
+  border-color: rgb(60, 74, 223);
+  font-size: 15px;
+}
+.navbar__userAcctions .btnCreatePost:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  background-color: rgb(60, 74, 223);
+}
+@media screen and (min-width: 576px) {
+  .navbar__userAcctions .btnCreatePost {
+    font-size: 10px;
+    background-color: red;
+  }
+}
+.navbar__userAcctions .userImage .btnImage {
+  border-radius: 50%;
+  border: none;
+}
+.navbar__userAcctions .userImage .btnImage .wrapperImage {
+  border-radius: 50%;
+}
+.navbar__userAcctions .userImage .btnImage .wrapperImage .image {
+  border-radius: 50%;
+  height: 32px;
+  width: 26px;
 }
 
 * {
