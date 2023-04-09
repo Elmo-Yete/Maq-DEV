@@ -1,0 +1,17 @@
+@use './home/_aside-left.scss';
+@use './home/_main.scss';
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   font-family: 'Bebas Neue', cursive
+}
+body,
+html{
+   padding: 0;
+   margin: 0;
+   background-color: rgb(245,245,245);
+   font-size: 16px;
+   text-align: center;
+   width: 100%;
+}
