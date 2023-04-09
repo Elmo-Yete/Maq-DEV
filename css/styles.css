@@ -8,7 +8,7 @@ body,
 html {
   padding: 0;
   margin: 0;
-  background: white;
+  background: #eeeee4;
   font-size: 16px;
   text-align: center;
   width: 100%;
@@ -33,6 +33,7 @@ html {
   display: flex;
   height: 5rem;
   width: 10rem;
+  max-width: 11rem;
 }
 .blueBox img {
   width: 50%;
@@ -165,7 +166,7 @@ html {
   flex-direction: column;
   align-items: start;
   width: 31rem;
-  height: rem;
+  height: auto;
   margin-left: 16rem;
   position: relative;
 }
@@ -215,4 +216,56 @@ html {
 }
 .homeFeed .commentsSection {
   display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 30rem;
+  justify-content: center;
+  margin-left: 15rem;
+}
+.homeFeed .commentsSection .profileInfo {
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: row;
+  margin-left: 1.5rem;
+  height: 3rem;
+  width: 100%;
+}
+.homeFeed .commentsSection .profileInfo img {
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+  height: auto;
+}
+.homeFeed .commentsSection .profileInfo .userName {
+  display: flex;
+  width: 5rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+}
+.homeFeed .commentsSection .profileInfo .timePost {
+  display: flex;
+  margin-top: 0.15rem;
+  flex-direction: row;
+  font-size: 0.7rem;
+  height: 1rem;
+  width: 5rem;
+}
+.homeFeed .commentsSection .commentAncor {
+  width: 35rem;
+  height: 8rem;
+  margin-left: 1.5rem;
+  text-align: start;
+}
+.homeFeed .commentsSection .commentAncor p {
+  margin-left: 3rem;
+  font-size: 0.8;
+}
+.homeFeed .commentsSection .commentAncor .aOpenComments {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+.homeFeed .commentsSection .commentAncor .aOpenComments a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=styles.css.map */
