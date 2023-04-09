@@ -1,5 +1,7 @@
-@use './home/_aside-left.scss';
-@use './home/_main.scss';
+@use './mixins';
+@use './home/aside-left';
+@use './home/mainCentralPart';
+@use './home/navbar';
 
 * {
    box-sizing: border-box;
