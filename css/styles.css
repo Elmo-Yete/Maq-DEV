@@ -387,6 +387,34 @@ main {
   color: black;
 }
 
+.asideRight {
+  text-decoration: none;
+}
+.asideRight .listings {
+  background-color: #fafafa;
+  height: 300px;
+  border-radius: 10px;
+  border: solid 2px rgba(235, 238, 238, 0.867);
+}
+.asideRight .listings__all {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+.asideRight .listings__all h3 {
+  text-align: left;
+  line-height: 1.5rem;
+  font-size: 25px;
+}
+.asideRight .listings__all h6 {
+  text-align: right;
+  line-height: 1.5rem;
+  color: blue;
+}
+.asideRight__first-post-subheading {
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
