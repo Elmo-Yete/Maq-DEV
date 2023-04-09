@@ -232,7 +232,7 @@ main {
 .interReact {
   display: flex;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   justify-content: start;
   width: 100%;
 }
@@ -267,14 +267,18 @@ main {
   align-items: center;
   justify-content: center;
 }
+.homeFeed .postBody {
+  background: gainsboro;
+  border-radius: 1rem;
+}
 .homeFeed .profileImgTxt {
-  display: inline-flex;
+  display: flex;
   padding: 0.5rem;
   flex-wrap: wrap;
   font-size: 0.9rem;
   height: -moz-fit-content;
   height: fit-content;
-  width: 31rem;
+  width: 32rem;
 }
 .homeFeed .profileImgTxt img {
   border-radius: 0.4rem;
@@ -282,21 +286,17 @@ main {
   height: auto;
   display: flex;
 }
-.homeFeed .profileImgTxt p {
-  margin-left: 0.5rem;
-}
 .homeFeed .profileImgTxt span {
-  margin-left: 0.5rem;
   opacity: 0.5;
+  margin-left: 16px;
 }
 .homeFeed .postTxt {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  width: 31rem;
+  width: 35rem;
   height: auto;
-  position: relative;
 }
 .homeFeed .postTxt .postsHashtags {
   display: flex;
@@ -307,8 +307,7 @@ main {
 }
 .homeFeed .postTxt h4 {
   height: auto;
-  width: 50%;
-  margin-left: 1.5rem;
+  width: 100%;
 }
 .homeFeed .postTxt a {
   text-decoration: none;
@@ -343,12 +342,15 @@ main {
   gap: 0.5rem;
 }
 .homeFeed .commentsSection {
+  align-items: center;
+  background: gainsboro;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
-  width: 30rem;
+  margin-top: 0.5rem;
   justify-content: center;
-  align-items: center;
+  width: 42rem;
+  height: 16rem;
 }
 .homeFeed .commentsSection .profileInfo {
   display: flex;
@@ -383,19 +385,15 @@ main {
   align-items: start;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  gap: 1rem;
-  height: 8rem;
+  height: 12rem;
 }
 .homeFeed .commentsSection .commentAncor p {
   text-align: start;
   font-size: 0.8;
   margin-left: 1rem;
-  margin-top: 20px;
 }
 .homeFeed .commentsSection .commentAncor .aOpenComments {
   margin-left: 1rem;
-  margin-top: 1.5rem;
 }
 .homeFeed .commentsSection .commentAncor .aOpenComments a {
   text-decoration: none;
