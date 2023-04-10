@@ -564,7 +564,6 @@ main {
   align-items: center;
   display: flex;
   justify-content: center;
-  border: dotted 1px black;
   height: 200px;
   width: 100%;
   flex-wrap: wrap;
