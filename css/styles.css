@@ -267,7 +267,7 @@ main {
   justify-content: center;
 }
 .homeFeed .postBody {
-  background: gainsboro;
+  background: #ffffff;
   border-radius: 1rem;
 }
 .homeFeed .profileImgTxt {
@@ -357,7 +357,7 @@ main {
 }
 .homeFeed .commentsSection {
   align-items: center;
-  background: gainsboro;
+  background: #ffffff;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
