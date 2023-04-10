@@ -32,7 +32,7 @@
   <body>
     <header>
       <nav
-        class="navbar bg-light fixed-top mb-10 p-0 bg-white d-sm-flex justify-content-between"
+        class="navbar bg-light fixed-top mb-5 p-0 bg-white d-sm-flex justify-content-between"
       >
         <div class="container-fluid">
           <button
@@ -414,20 +414,61 @@
         </div>
       </nav>
     </header>
-    <main>
-        <section class="litlePostView mt-5">
-          <div class="litlePostView__headerContainer d-flex gap-2">
-            <img src="./assets/main/Globos-color-webp.webpgit c" alt="" /><span
+    <main class="mt-5">
+        <section class="litlePostView mt-5 col-12 col-md-10 col-lg-7 px-5 py-4">
+          <div class="litlePostView__headerContainer d-flex gap-3">
+            <img src="./assets/main/profile-pic-webp.webp" alt="" /><span
               >The DEV Team</span
             >
           </div>
-          <h2><a href="#">Contribute on DEV as a Tag Moderator</a></h2>
-          <p>
+          <img class="litlePostView__ballons mt-4"src="./assets/main/Globos-color-webp.webp" alt="">
+          <h2 class="my-4 text-start"><a href="#">Contribute on DEV as a Tag Moderator</a></h2>
+          <p class="text-start">
             Tag moderators assist in organizing content, promoting inclusive
             environments, and enhancing searchability for DEV communities, while
             also gaining personal growth and leadership skills.
           </p>
-          <a href=""></a>
+          <span class="d-flex justify-content-start"><a href="#" class="text-start">Read entire post</a>
+          </span>
+          </section>
+        <section class="nextToRead mt-4 col-12 col-md-10 col-lg-7 px-5 py-4">
+            <h3 class="text-start my-4">Read next</h3>
+            <div class="nextToRead__user d-flex gap-4 align-items-start">
+                <img src="./assets/post_main/user-1.webp" alt="User profile image">
+                <div>
+                    <h4>Az Managed Grafana with Terraform Azapi & Devops</h4>
+                    <p class="text-start">
+                        Arindam Mitra - <span>
+                            Oct 19 '22
+                        </span></p>
+                </div>
+            </div>
+            <div class="nextToRead__user d-flex gap-4 align-items-start">
+                <img src="./assets/post_main/user-2.webp" alt="User profile image">
+                <div>
+                    <h4>Использование GitHub в обучении студентов</h4>
+                    <p class="text-start">
+                        Старинин Андрей - <span>Sep 14 '22</span></p>
+                </div>
+            </div>
+            <div class="nextToRead__user d-flex gap-4 align-items-start">
+                <img src="./assets/post_main/user-1.webp" alt="User profile image">
+                <div>
+                    <h4>Azure Devops best practises: Learning by doing</h4>
+                    <p class="text-start">
+                        Arindam Mitra - <span>
+                            Oct 19 '22
+                        </span></p>
+                </div>
+            </div>
+            <div class="nextToRead__user d-flex gap-4 align-items-start">
+                <img src="./assets/post_main/user-3.webp" alt="User profile image">
+                <div>
+                    <h4>AWS re:Invent 2022: Know Before You Go</h4>
+                    <p class="text-start">
+                        Helen Anderson - <span>Oct 11 '22</span></p>
+                </div>
+            </div>
         </section>
     </main>
     <footer id="footer">
