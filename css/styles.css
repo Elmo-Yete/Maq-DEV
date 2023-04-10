@@ -523,6 +523,10 @@ main {
   margin: 0px 6px;
 }
 
+.litlePostView {
+  margin-top: 10rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
