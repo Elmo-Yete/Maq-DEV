@@ -467,6 +467,12 @@ main {
   width: 26px;
 }
 
+.main-box {
+  border: dotted 1px black;
+  height: 200px;
+  width: 100%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
