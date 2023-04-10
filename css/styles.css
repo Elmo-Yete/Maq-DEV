@@ -554,6 +554,37 @@ main {
   font-size: 14px;
 }
 
+.aside-post-left {
+  display: flex;
+  height: 100%;
+  align-content: end;
+}
+
+.main-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: dotted 1px black;
+  height: 200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.main-box a {
+  color: black;
+  text-decoration: none;
+}
+.main-box p {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 10;
+  padding: 10px 0px;
+}
+
+.icons-box {
+  padding: 10px 0px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

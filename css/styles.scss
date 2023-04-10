@@ -5,6 +5,8 @@
 @use './home/footer';
 @use './variables';
 @use './post/main-post';
+@use './post/aside-post-left';
+@use './post/aside-post-right';
 
 * {
    box-sizing: border-box;
