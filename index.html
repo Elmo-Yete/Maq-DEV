@@ -17,14 +17,20 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar bg-light fixed-top mb-10 p-0 bg-white d-sm-flex">
+      <nav
+        class="navbar bg-light fixed-top mb-10 p-0 bg-white d-sm-flex justify-content-between"
+      >
         <div class="container-fluid">
           <button
-            class="navbar-toggler d-md-none mt-2 col-sm-2"
+            class="navbar-toggler d-md-none mt-md-2 col-2"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
@@ -33,7 +39,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="navbar__containerLogoAndSearchBar d-flex col-5 gap-3 align-items-center"
+            class="navbar__containerLogoAndSearchBar d-flex col-4 gap-3 align-items-center"
           >
             <a class="navbar__devToLogo d-none d-md-block" href="#"
               ><img src="./assets/nav-bar/DEV-logo-WEBP.webp" alt=""
@@ -42,7 +48,7 @@
               class="navbar__containerLogoAndSearchBar form-inline my-2 my-lg-0 d-flex d-none d-md-block form-search"
             >
               <div
-                class="wrapper-search position-relative d-flex gap-4 align-items-center justify-content-end mt-1"
+                class="wrapper-search position-relative d-flex align-items-center justify-content-center mt-1"
               >
                 <input
                   class="inputSearch form-control mr-sm-2 w-100 d-none d-md-block"
@@ -50,13 +56,41 @@
                   placeholder="Search"
                   aria-label="Search"
                 />
+                <button
+                  class="navbar__buttonSearch btn d-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    class
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    class="crayons-icon c-btn__icon"
+                    focusable="false"
+                  >
+                    <path
+                      d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                    ></path>
+                  </svg>
+                </button>
               </div>
             </form>
-        </div>
-        <button
-          class="buttonSearch btn d-flex align-items-center justify-content-center"
-        >
-          <svg
+          </div>
+          <div
+          class="navbar__userAcctions d-flex gap-md-4 gap-3 align-items-center justify-content-start justify-content-md-end col-6 col-md-4 col-xl-3"
+          >
+          <div class="navbar__buttonSearchSmallScreen d-md-none align-items-center">
+            <button
+              class="navbar__buttonSearch btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+            <svg
             class
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -70,10 +104,24 @@
               d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
             ></path>
           </svg>
-        </button>
-          <div
-            class="navbar__userAcctions d-flex gap-4 align-items-center col-4 col-md-3"
-          >
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <form
+                class="navbar__smallSearchBar form-inline my-2  d-flex col-12 form-search"
+              >
+                <div
+                  class="wrapper-search position-relative d-flex align-items-center justify-content-center mt-1"
+                >
+                  <input
+                    class="inputSearch form-control mr-sm-2 w-100 d-none d-md-block"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
             <button type="button" class="btnCreatePost btn btn-outline-primary">
               Create Post
             </button>
@@ -676,7 +724,7 @@
                 Community post
               </p>
               <p class="getIntoSymbol">></p>
-            </div>
+          x|  </div>
             <div class="yellowBox__emojiTxt3">
               <p><span class="paintedHand">💅🏼</span>Join the welcome thread</p>
               <p class="getIntoSymbol">></p>
