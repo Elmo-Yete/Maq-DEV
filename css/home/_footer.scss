@@ -1,2 +1,58 @@
 @use '../mixins';
 @use '../variables';
+
+#footer {
+    font-family: 'PT Sans', sans-serif;
+    align-items: center;
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem; 
+    padding: 55px;
+    .footerbox{
+        padding: 25px;
+        .dev {
+            font-family: 'PT Sans', sans-serif;
+            a {
+                font-family: 'PT Sans', sans-serif;
+                color:rgb(59, 73, 223);
+            }
+            margin: 0px 6px;
+        }
+        a {
+            font-family: 'PT Sans', sans-serif;
+            text-decoration: none;
+            color:rgb(59, 73, 223);
+        }
+        .listahome {
+            color:rgb(59, 73, 223);
+            display: flex;
+            gap: 20px;
+            margin: 0px 6px;
+            list-style-type: disc;
+        }
+        .privacy {
+            color:rgb(59, 73, 223);
+            display: flex;
+            justify-content: center;
+            margin: 0px 6px;
+            list-style: disc outside;
+            gap: 20px;
+        }
+        .madelove{
+            p {
+                font-family: 'PT Sans', sans-serif;
+            }
+            font-family: 'PT Sans', sans-serif;
+            a {
+                font-family: 'PT Sans', sans-serif;
+                color:rgb(59, 73, 223);
+            }
+            margin: 0px 6px;
+            .madelovep{
+                font-family: 'PT Sans', sans-serif;
+                margin: 0px 6px;
+            }
+        }
+    }
+}
