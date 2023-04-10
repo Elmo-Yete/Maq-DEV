@@ -1,8 +1,8 @@
 .asideRight {
   text-decoration: none;
-  .listings { 
+  &__listings { 
     background-color:#fafafa;
-    height: 300px;
+    height: 600px;
     border-radius: 10px;
     border: solid 2px rgba(235, 238, 238, 0.867);
     &__all {
@@ -22,13 +22,19 @@
       
 
     }
+    
     }
-    &__first-post{
-        
-
+    &__allDiscussCard{
+       background-color:#fafafa;
+       height: 600px;
+       border-radius: 10px;
+       border: solid 2px rgba(235, 238, 238, 0.867);
     }
-    &__first-post-subheading{
-        border-bottom: 1px solid rgb(245, 245, 245);
-     }
-  }
+      &__allWatercooler{
+       background-color:#fafafa;
+       height: 600px;
+       border-radius: 10px;
+       border: solid 2px rgba(235, 238, 238, 0.867);
 
+      }
+    }
