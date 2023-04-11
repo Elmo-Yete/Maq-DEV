@@ -30,15 +30,15 @@
   &__buttonSearch {
     height: 40px;
   }
-  &__smallSearchBar {
-
-  }
   &__userAcctions {
     height: 40px;
     .btnCreatePost {
       border-color: variables.$color-primary;
       color: variables.$color-primary;
-      font-size: 15px;
+      font-size: 12px;
+      @include mixins.responsive($breakpoint: variables.$medium){
+        font-size: 15px;
+      }
       &:hover {
         background-color: variables.$color-primary;
         color: variables.$color-white;
