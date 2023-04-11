@@ -523,34 +523,93 @@ main {
   margin: 0px 6px;
 }
 
-.litlePostView {
+main {
+  padding-top: 14px;
+}
+
+.postView {
+  background-color: rgb(255, 255, 255);
+}
+.postView__imgGlobe img {
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+}
+.postView .reactions ul {
+  padding-left: 0px;
+}
+.postView .reactions ul li img {
+  margin-right: 8px;
+  height: auto;
+  width: 24px;
+}
+.postView__userDescription .datepost img {
+  width: 45px;
+  height: 45px;
+}
+.postView__userDescription .info {
+  text-align: start;
+  height: 10px;
+}
+.postView__userDescription .info :nth-child(2) {
+  font-size: 14px;
+}
+.postView__userDescription .info p {
+  margin-bottom: 0px;
+}
+.postView__mainInfo .postTitle {
+  text-align: start;
+  font-size: 52px;
+  letter-spacing: 12px;
+  padding-right: 54px;
+}
+.postView__mainInfo .linksCommunity {
+  padding-left: 0px;
+  margin-bottom: 3rem;
+}
+.postView__mainInfo .linksCommunity li a {
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+}
+.postView__mainInfo .firstPara {
+  margin-bottom: 2rem;
+  font-weight: 100;
+  font-family: monospace;
+}
+.postView__mainInfo .imgFishes {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.postView .litlePostView {
   background-color: rgb(250, 250, 250);
   box-shadow: 0px 0px 1px rgb(200, 199, 199);
 }
-.litlePostView__headerContainer img {
+.postView .litlePostView__headerContainer img {
   height: auto;
   width: 25px;
 }
-.litlePostView__ballons {
-  width: 100%;
+.postView .litlePostView__textContainer {
+  width: 90%;
 }
-
-.nextToRead {
+.postView .litlePostView__ballons {
+  width: 80%;
+}
+.postView .nextToRead {
   background-color: rgb(250, 250, 250);
   box-shadow: 0px 0px 1px rgb(200, 199, 199);
 }
-.nextToRead__user h4 {
+.postView .nextToRead__user h4 {
   font-size: 18px;
 }
-.nextToRead__user img {
+.postView .nextToRead__user img {
   border-radius: 50%;
   width: 60px;
   height: 60px;
 }
-.nextToRead__user p {
+.postView .nextToRead__user p {
   font-size: 12px;
 }
-.nextToRead__user p span {
+.postView .nextToRead__user p span {
   font-size: 14px;
 }
 
@@ -582,6 +641,43 @@ main {
 
 .icons-box {
   padding: 10px 0px;
+}
+
+.asideRight {
+  text-decoration: none;
+}
+.asideRight__listings {
+  background-color: #fafafa;
+  height: 600px;
+  border-radius: 10px;
+  border: solid 2px rgba(235, 238, 238, 0.867);
+}
+.asideRight__listings__all {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+.asideRight__listings__all h3 {
+  text-align: left;
+  line-height: 1.5rem;
+  font-size: 25px;
+}
+.asideRight__listings__all h6 {
+  text-align: right;
+  line-height: 1.5rem;
+  color: blue;
+}
+.asideRight__listings__all__allDiscussCard {
+  background-color: #fafafa;
+  height: 600px;
+  border-radius: 10px;
+  border: solid 2px rgba(235, 238, 238, 0.867);
+}
+.asideRight__listings__all__allWatercooler {
+  background-color: #fafafa;
+  height: 600px;
+  border-radius: 10px;
+  border: solid 2px rgba(235, 238, 238, 0.867);
 }
 
 * {
