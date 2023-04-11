@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!--emoji in svg-->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="mb-5">
+      <nav
+        class="navbar bg-light fixed-top mb-5 p-0 bg-white d-sm-flex justify-content-between"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler d-md-none mt-md-2 col-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar__containerLogoAndSearchBar d-flex col-4 gap-3 align-items-center"
+          >
+            <a class="navbar__devToLogo d-none d-md-block" href="./index.html"
+              ><img src="./assets/nav-bar/DEV-logo-WEBP.webp" alt=""
+            /></a>
+            <form
+              class="navbar__containerLogoAndSearchBar form-inline my-2 my-lg-0 d-flex d-none d-md-block form-search"
+            >
+              <div
+                class="wrapper-search position-relative d-flex align-items-center justify-content-center mt-1"
+              >
+                <input
+                  class="inputSearch form-control mr-sm-2 w-100 d-none d-md-block"
+                  type="search"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+                <button
+                  class="navbar__buttonSearch btn d-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    class
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    class="crayons-icon c-btn__icon"
+                    focusable="false"
+                  >
+                    <path
+                      d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="navbar__userAcctions d-flex gap-md-4 gap-3 align-items-center justify-content-start justify-content-md-end col-6 col-md-4 col-xl-3"
+          >
+            <div
+              class="navbar__buttonSearchSmallScreen d-md-none align-items-center"
+            >
+              <button
+                class="navbar__buttonSearch btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <svg
+                  class
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="crayons-icon c-btn__icon"
+                  focusable="false"
+                >
+                  <path
+                    d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                  ></path>
+                </svg>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <form
+                  class="navbar__smallSearchBar form-inline my-2 d-flex col-12 form-search"
+                >
+                  <div
+                    class="wrapper-search position-relative d-flex align-items-center justify-content-center mt-1"
+                  >
+                    <input
+                      class="inputSearch form-control mr-sm-2 w-100 d-none d-md-block"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <button type="button" class="btnCreatePost btn btn-outline-primary">
+              Create Post
+            </button>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-labelledby="aj2fnal56t2f30ylhhllcn5wc53ciwd1"
+                class="crayons-icon"
+              >
+                <title id="aj2fnal56t2f30ylhhllcn5wc53ciwd1">
+                  Notifications
+                </title>
+                <path
+                  d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z"
+                ></path>
+              </svg>
+            </a>
+            <div class="userImage">
+              <button class="btnImage">
+                <span class="wrapperImage"
+                  ><img
+                    class="image"
+                    src="./assets/nav-bar/user-image.webp"
+                    alt=""
+                /></span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                DEV Community
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <nav class="nav-left">
+              <ul class="navigation-links">
+                <li class="links-box">
+                  <a class="links-list" href="home-link">
+                    <span class="icon-home">
+                      <i class="em-svg em-house"></i>
+                    </span>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="listings-link">
+                    <span class="icon-list">
+                      <i
+                        class="em-svg em-bookmark_tabs"
+                        aria-role="presentation"
+                        aria-label="BOOKMARK TABS"
+                      ></i>
+                    </span>
+                    Listings
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="Podcast-link">
+                    <span class="icon-mic">
+                      <i
+                        class="em-svg em-studio_microphone"
+                        aria-role="presentation"
+                        aria-label=""
+                      ></i>
+                    </span>
+                    Podcast
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="Video-link">
+                    <span class="icon-camara">
+                      <i
+                        class="em-svg em-movie_camera"
+                        aria-role="presentation"
+                        aria-label="MOVIE CAMERA"
+                      ></i>
+                    </span>
+                    Videos
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="Tags-link">
+                    <span class="icon-tag">
+                      <i
+                        class="em-svg em-label"
+                        aria-role="presentation"
+                        aria-label=""
+                      ></i>
+                    </span>
+                    Tags
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="FAQ-link">
+                    <span class="FAQ-icon">
+                      <i
+                        class="em-svg em-bulb"
+                        aria-role="presentation"
+                        aria-label="ELECTRIC LIGHT BULB"
+                      ></i>
+                    </span>
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="Forem-shop-link">
+                    <span class="Forem-shop-icon">
+                      <i
+                        class="em-svg em-shopping_bags"
+                        aria-role="presentation"
+                        aria-label=""
+                      ></i>
+                    </span>
+                    Forem shop
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="Sponsors-link">
+                    <span class="Sponsors-icon">
+                      <i
+                        class="em-svg em-heart"
+                        aria-role="presentation"
+                        aria-label="HEAVY BLACK HEART"
+                      ></i>
+                    </span>
+                    Sponsors
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="About-link">
+                    <span class="About-icon">
+                      <i
+                        class="em-svg em-rainbow-flag"
+                        aria-role="presentation"
+                        aria-label=""
+                      ></i>
+                    </span>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="Contact-link">
+                    <span class="Contact-icon">
+                      <i
+                        class="em-svg em-trumpet"
+                        aria-role="presentation"
+                        aria-label="TRUMPET"
+                      ></i>
+                    </span>
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="Guides-link">
+                    <span class="Guides-icon">
+                      <i
+                        class="em-svg em-book"
+                        aria-role="presentation"
+                        aria-label="OPEN BOOK"
+                      ></i>
+                    </span>
+                    Guides
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="Software-comparison-link">
+                    <span class="Software-comparison-icon">
+                      <i
+                        class="em-svg em-thinking_face"
+                        aria-role="presentation"
+                        aria-label="THINKING FACE"
+                      ></i>
+                    </span>
+                    Software comparison
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="second-nav">
+              <h5 class="second-nav-title">Other</h5>
+              <ul class="second-nav-ul">
+                <li>
+                  <a class="links-list" href="Code-of-conduct">
+                    <span class="Code-of-conduct-icon">
+                      <i
+                        class="em-svg em---1"
+                        aria-role="presentation"
+                        aria-label="THUMBS UP SIGN"
+                      ></i>
+                    </span>
+                    Code of conduct
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="Privacy-policy">
+                    <span class="Privacy-policy-icon">
+                      <i
+                        class="em-svg em-nerd_face"
+                        aria-role="presentation"
+                        aria-label="NERD FACE"
+                      ></i>
+                    </span>
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a class="links-list" href="Terms-of-use>">
+                    <span class="Terms-of-use-icon">
+                      <i
+                        class="em-svg em-eyes"
+                        aria-role="presentation"
+                        aria-label="EYES"
+                      ></i>
+                    </span>
+                    Terms of use
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="social-media-icons">
+              <a href="">
+                <img src="./assets/aside-left/icons8-twitter.svg" />
+              </a>
+              <a href="">
+                <img src="./assets/aside-left/icons8-facebook (1).svg" />
+              </a>
+              <a href="">
+                <img src="./assets/aside-left/icons8-github (1).svg" />
+              </a>
+              <a href="">
+                <img src="./assets/aside-left/icons8-instagram (1).svg" />
+              </a>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-labelledby="a7bkrz8ygq8zme48bq7vu5ocykwzxgqe"
+                  class="crayons-icon c-link__icon"
+                >
+                  <title id="a7bkrz8ygq8zme48bq7vu5ocykwzxgqe">Twitch</title>
+                  <path
+                    d="M4.3 3H21v11.7l-4.7 4.7h-3.9l-2.5 2.4H7v-2.4H3V6.2L4.3 3zM5 17.4h4v2.4h.095l2.5-2.4h3.877L19 13.872V5H5v12.4zM15 8h2v4.7h-2V8zm0 0h2v4.7h-2V8zm-5 0h2v4.7h-2V8z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-labelledby="a7k04x26ffi1fkjz6qhdyj4o2ic277we"
+                  class="crayons-icon c-link__icon"
+                >
+                  <title id="a7k04x26ffi1fkjz6qhdyj4o2ic277we">Mastodon</title>
+                  <path
+                    d="M21.258 13.99c-.274 1.41-2.456 2.955-4.962 3.254-1.306.156-2.593.3-3.965.236-2.243-.103-4.014-.535-4.014-.535 0 .218.014.426.04.62.292 2.215 2.196 2.347 4 2.41 1.82.062 3.44-.45 3.44-.45l.076 1.646s-1.274.684-3.542.81c-1.25.068-2.803-.032-4.612-.51-3.923-1.039-4.598-5.22-4.701-9.464-.031-1.26-.012-2.447-.012-3.44 0-4.34 2.843-5.611 2.843-5.611 1.433-.658 3.892-.935 6.45-.956h.062c2.557.02 5.018.298 6.451.956 0 0 2.843 1.272 2.843 5.61 0 0 .036 3.201-.397 5.424zm-2.956-5.087c0-1.074-.273-1.927-.822-2.558-.567-.631-1.308-.955-2.229-.955-1.065 0-1.871.41-2.405 1.228l-.518.87-.519-.87C11.276 5.8 10.47 5.39 9.405 5.39c-.921 0-1.663.324-2.229.955-.549.631-.822 1.484-.822 2.558v5.253h2.081V9.057c0-1.075.452-1.62 1.357-1.62 1 0 1.501.647 1.501 1.927v2.79h2.07v-2.79c0-1.28.5-1.927 1.5-1.927.905 0 1.358.545 1.358 1.62v5.1h2.08V8.902l.001.001z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="d-flex col-12 mt-5">
+      <aside class="post-left d-none d-md-block col-1">
+        <div class="main-box">
+          <div class="icons-box">
+            <div class="heart-box-icon">
+              <div>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    role="img"
+                    aria-hidden="true"
+                    class="crayons-icon"
+                  >
+                    <g clip-path="url(#clip0_988_3276)">
+                      <path
+                        d="M19 14V17H22V19H18.999L19 22H17L16.999 19H14V17H17V14H19ZM20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.992L19.059 11.574C20.39 10.05 20.32 7.65998 18.827 6.16998C17.324 4.67098 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09103 4.60598 6.67503 4.66798 5.17203 6.17198C3.68203 7.66198 3.60703 10.047 4.98003 11.623L13.412 20.069L12 21.485L3.52003 12.993C1.41603 10.637 1.49503 7.01898 3.75603 4.75698C6.02103 2.49298 9.64403 2.41698 12 4.52898C14.349 2.41998 17.979 2.48998 20.242 4.75698H20.243Z"
+                        fill="#525252"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_988_3276">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="heart-icon-text">125</p>
+                </a>
+              </div>
+            </div>
+            <div class="comment-icon">
+              <div>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    role="img"
+                    aria-hidden="true"
+                    class="crayons-icon"
+                  >
+                    <path
+                      d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z"
+                    ></path>
+                  </svg>
+                  <p class="comment-icon-text">28</p>
+                </a>
+              </div>
+            </div>
+            <div class="save-icon">
+              <div>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    role="img"
+                    aria-hidden="true"
+                    class="crayons-icon"
+                  >
+                    <path
+                      d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"
+                    ></path>
+                  </svg>
+                </a>
+                <p class="save-icon-text">43</p>
+              </div>
+            </div>
+            <div class="dots-icon">
+              <div class="icon-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  role="img"
+                  aria-labelledby="a3uqt874hk3whei0jfj4trzyxgg5xg4v"
+                  aria-hidden="true"
+                  class="crayons-icon dropdown-icon"
+                >
+                  <title id="a3uqt874hk3whei0jfj4trzyxgg5xg4v">More...</title>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <section class="postView col-12 col-md-10 col-lg-8 mt-2">
+        <div class="postView__imgGlobe">
+          <img src="./assets/post_main/img_ballons.webp" alt="img-ballons" />
+        </div>
+        <div class="ms-4 ps-3 pe-5">
+          <div class="postView__userDescription d-flex gap-3 my-4">
+            <div class="datepost">
+              <img src="./assets/post_main/img_dev.webp" />
+            </div>
+            <div class="info">
+              <p>Sloan the DEV Moderator for the DEV team</p>
+              <span> Posted on 7 abr </span>
+            </div>
+          </div>
+          <section class="reactions my-4 pt-3">
+            <ul class="d-flex justify-content-start gap-5">
+              <li>
+                <img src="./assets/post_main/icon_heart.svg" />
+                <span> 73 </span>
+              </li>
+              <li>
+                <img src="./assets/post_main/icon_unicornio.svg" />
+                <span> 16 </span>
+              </li>
+              <li>
+                <img src="./assets/post_main/icon_surprised.svg" />
+                <span> 9 </span>
+              </li>
+              <li>
+                <img src="./assets/post_main/icon_hands.svg" />
+                <span> 14 </span>
+              </li>
+              <li>
+                <img src="./assets/post_main/icon_fire.svg" />
+                <span> 12 </span>
+              </li>
+            </ul>
+          </section>
+          <article class="postView__mainInfo">
+            <h1 class="postTitle">
+              Make a Difference on DEV as a Tag Moderator
+            </h1>
+            <ul class="linksCommunity d-flex gap-5">
+              <li>
+                <a href="link_meta"># meta</a>
+              </li>
+              <li>
+                <a href="link_community"># community</a>
+              </li>
+              <li>
+                <a href="link_moderation"># moderation</a>
+              </li>
+              <li>
+                <a href="link_learning"># learning</a>
+              </li>
+            </ul>
+            <h2 class="firstTitle text-start">
+              Make Your Mark on the DEV Community Experience by Becoming a Tag
+              Moderator
+            </h2>
+            <p class="firstPara text-start">
+              Tag moderators play an important role in helping to organize and
+              manage the content of our community. If you want to make a
+              difference here on DEV and for the developer community, consider
+              joining our team as a tag moderator. Here are a few benefits:
+            </p>
+            <img
+              class="imgFishes"
+              src="./assets/post_main/img_fishes.webp"
+              alt="img-fishes"
+            />
+            <h2 class="secondTitle text-start">
+              Opportunity for leadership and influence:
+            </h2>
+            <p class="firstPara text-start">
+              As a tag moderator, you'll have the opportunity to take on a
+              leadership role in the community and influence the direction of
+              the conversation by highlighting certain topics and content.
+            </p>
+            <p class="firstPara text-start">
+              Share your knowledge and area(s) of expertise by supporting other
+              community members, elevating constructive conversations and
+              content, and answering questions.
+            </p>
+            <img
+              class="imgNiño"
+              src="./assets/post_main//niño.webp"
+              alt="img-niño"
+            />
+            <h2 class="thirdTitle text-start">Personal development</h2>
+            <p class="firstPara text-start">
+              Being a tag moderator is a valuable and rewarding experience for
+              those of you who are dedicated to improving the content of an
+              online community.
+            </p>
+            <p class="firstPara text-start">
+              Learn more about the community and gain new skills such as
+              conflict resolution, communication, and leadership.
+            </p>
+            <img
+            class="imgCommunity"
+              src="./assets/post_main/img_comunity.webp"
+              alt="img-community"
+            />
+            <h2 class="thirdTitle text-start">Better organized content and improved searchability:</h2>
+            <p class="firstPara text-start">
+              By helping us ensure that content is properly categorized and
+              tagged, you can improve the searchability of the community and
+              make it easier for our users to find the information they’re
+              looking for.
+            </p>
+            <p class="firstParaBorder text-start">
+              Users are more likely to have a positive experience and return to
+              the community in the future when content is organized and easy to
+              find.
+            </p>
+            <br />
+            <a class="linkInterest text-start" href="link-form">
+              Interested? Complete this form and we’ll be in touch!
+            </a>
+            <br>
+            <br>
+            <br />
+            <p class="firstPara text-start">Some other tasks our tag moderators help us do:</p>
+            <ul class="someOtherTasks text-start">
+              <li>Report spam, abuse, and plagiarism</li>
+              <li>Welcome new community members</li>
+              <li>Foster an inclusive environment</li>
+              <li>Instruct users on DEV features</li>
+              <li>Discourage promotional abuse</li>
+              <li>Promote quality posts</li>
+              <li>Manage post tags</li>
+            </ul>
+
+            <p class="firstPara text-start">And some additional perks we give back to you:</p>
+            <ul class="someOtherTasks text-start">
+              <li class="miLi">Monthly MOD Gametimes</li>
+              <li class="miLi">An Invitation to our DEV MOD Discord Channel</li>
+              <li class="miLi">Opportunities to represent DEV at tech conferences</li>
+              <li class="miLi">Power! Bwa-ha-ha! (Please use it for good.)</li>
+              <li class="miLi">
+                DEV cred and kudos! AKA: the adoration of our Community Team and
+                the opportunity to earn exclusive MOD badges
+              </li>
+              <li class="miLi">It looks great on your resume!</li>
+            </ul>
+            <img
+              class="imgCorona"
+              src="./assets/post_main/img_hand_corona.webp"
+              alt="img-hand-community"
+            />
+            <a href="#" class="what mt-5 text-start pt-5">What are you waiting for?</a>
+          </article>
+        </div>
+        <br />
+        <div class="container_comments">
+          <h2>Top Comments (28)</h2>
+          <div class="comment1 d-flex gap-4">
+            <div class="usuarioa1">
+              <img src="./assets/post_main/img_benhalpern_comments1.webp" />
+            </div>
+            <div>
+              <strong>Ben Halpern</strong><span> - 7 abr - Edited</span>
+              <p class="userComment">Hope you sign up!</p>
+            </div>
+          </div>
+          <div class="comment2 d-flex gap-4">
+            <div class="usuarioa2">
+              <img src="./assets/post_main/img_DevarshiShimpi_comments2.webp" />
+            </div>
+            <div>
+              <strong>Devarshi Shimpi</strong> <span>- 7 abr - Edited</span>
+              <p>Great as always!! 🙌</p>
+              <p class="userComment">
+                Had a question, I am trusted user in the Community, do I also
+                have access to the Discord Channel? If so, I haven't been added
+                to it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section class="litlePostView">
+          <div
+            class="litlePostView__headerContainer d-flex gap-2 justify-content-start ms-5 ps-4"
+          >
+            <img src="./assets/main/profile-pic-webp.webp" alt="" /><span
+              >The DEV Team</span
+            >
+          </div>
+          <img
+            class="litlePostView__ballons mt-4"
+            src="./assets/main/Globos-color-webp.webp"
+            alt=""
+          />
+          <div class="litlePostView__textContainer ms-5 ps-4">
+            <h2 class="my-4 text-start">
+              <a href="#">Contribute on DEV as a Tag Moderator</a>
+            </h2>
+            <p class="text-start">
+              Tag moderators assist in organizing content, promoting inclusive
+              environments, and enhancing searchability for DEV communities,
+              while also gaining personal growth and leadership skills.
+            </p>
+            <span class="d-flex justify-content-start"
+              ><a href="#" class="text-start">Read entire post</a>
+            </span>
+          </div>
+        </section>
+        <section class="nextToRead mt-4 px-5 py-4">
+          <h3 class="text-start my-4">Read next</h3>
+          <div class="nextToRead__user d-flex gap-4 align-items-start">
+            <img
+              src="./assets/post_main/user-1.webp"
+              alt="User profile image"
+            />
+            <div>
+              <h4>Az Managed Grafana with Terraform Azapi & Devops</h4>
+              <p class="text-start">
+                Arindam Mitra - <span> Oct 19 '22 </span>
+              </p>
+            </div>
+          </div>
+          <div class="nextToRead__user d-flex gap-4 align-items-start">
+            <img
+              src="./assets/post_main/user-2.webp"
+              alt="User profile image"
+            />
+            <div>
+              <h4>Использование GitHub в обучении студентов</h4>
+              <p class="text-start">
+                Старинин Андрей - <span>Sep 14 '22</span>
+              </p>
+            </div>
+          </div>
+          <div class="nextToRead__user d-flex gap-4 align-items-start">
+            <img
+              src="./assets/post_main/user-1.webp"
+              alt="User profile image"
+            />
+            <div>
+              <h4>Azure Devops best practises: Learning by doing</h4>
+              <p class="text-start">
+                Arindam Mitra - <span> Oct 19 '22 </span>
+              </p>
+            </div>
+          </div>
+          <div class="nextToRead__user d-flex gap-4 align-items-start">
+            <img
+              src="./assets/post_main/user-3.webp"
+              alt="User profile image"
+            />
+            <div>
+              <h4>AWS re:Invent 2022: Know Before You Go</h4>
+              <p class="text-start">Helen Anderson - <span>Oct 11 '22</span></p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <aside class="right-nav-post col-3 d-none d-lg-block">
+        <div class="box-aside-posts">
+          <div class="first-box">
+            <div class="DEV-Team">
+              <span>
+                <img
+                  class="dev-logo"
+                  src="https://res.cloudinary.com/practicaldev/image/fetch/s--mbsgKaXh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png"
+                  class="crayons-logo__image"
+                  alt=""
+                  loading="lazy"
+                />
+              </span>
+              <a class="Dev-link" href="">The DEV Team</a>
+            </div>
+            <div class="follow">
+              <div class="follow btn">Follow</div>
+            </div>
+            <div class="Text-Box">
+              <h6 class="Text-1-2">
+                The hardworking team behind DEV :corazón:
+              </h6>
+            </div>
+            <div class="Text-2">
+              <p class="content-1">
+                Want to contribute to open source and help make the DEV
+                community stronger?
+              </p>
+              <p class="content-1">
+                The code that powers DEV is called <strong>Forem</strong> and is
+                freely available on GitHub.
+              </p>
+              <p class="content-1">You're welcome to jump in!</p>
+            </div>
+            <div class="Contribute">
+              <h4 class="Contribute-forem">Contribute to Forem</h4>
+            </div>
+          </div>
+          <div class="second-box sticky-lg-top">
+            <div class="hashtags-box">
+              <header class="second-box-header">
+                <h4 class="header-text">More From</h4>
+                <a class="header-link" href="">The DEV Team</a>
+              </header>
+              <a class="a-links-2" href="">
+                Join the WeCoded Virtual Meetup :estrella2:
+                <div>
+                  <span class="hashtags">#wecoded</span>
+                  <span class="hashtags">#meta</span>
+                </div>
+              </a>
+              <a class="a-links-2" href="">
+                Join us for #WeCoded 2023!
+                <div>
+                  <span class="hashtags">#wecoded</span>
+                  <span class="hashtags">#meta</span>
+                </div>
+              </a>
+              <a class="a-links-2" href="">
+                Some new Features to look Forward to on DEV
+                <div>
+                  <span class="hashtags">#meta</span>
+                  <span class="hashtags">#forem</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer id="footer" class="col-12">
+      <div class="footerbox">
+        <p class="dev">
+          <a #>DEV Community</a>
+          — A constructive and inclusive social network for software developers.
+          With you every step of your journey.
+        </p>
+        <ul class="listahome">
+          <li><a #>Home</a></li>
+          <li><a #>Listings</a></li>
+          <li><a #>Podcasts</a></li>
+          <li><a #>Videos</a></li>
+          <li><a #>Tags</a></li>
+          <li><a #>FAQ</a></li>
+          <li><a #>Forem Shop</a></li>
+          <li><a #>Sponsors</a></li>
+          <li><a #>About</a></li>
+          <li><a #>Contact</a></li>
+          <li><a #>Guides</a></li>
+          <li><a #>Software Comparisions</a></li>
+        </ul>
+        <ul class="privacy">
+          <li><a #>Code of Conduct</a></li>
+          <li><a #>Privacy Policy</a></li>
+          <li><a #>Terms of used</a></li>
+        </ul>
+        <div class="madelove">
+          <p class="madelovep">
+            Buil on
+            <a #>Forem </a>
+            — the
+            <a #>open source </a>
+            software that powers
+            <a #>DEV </a>
+            and other inclusive communities.
+          </p>
+          <p>
+            Made with love and
+            <a #>Ruby on Rails.</a>
+            DEV community © 2016 - 2023.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

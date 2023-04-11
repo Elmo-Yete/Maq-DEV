@@ -1,0 +1,25 @@
+@use './mixins';
+@use './home/aside-left';
+@use './home/mainCentralPart';
+@use './home/navbar';
+@use './home/footer';
+@use './variables';
+@use './post/main-post';
+@use './post/aside-post-left';
+@use './post/aside-post-right';
+
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   font-family: 'Bebas Neue', cursive
+}
+body,
+html{
+   padding: 0;
+   margin: 0;
+   background-color: variables.$color-gray;
+   font-size: 16px;
+   text-align: center;
+   width: 100%;
+}

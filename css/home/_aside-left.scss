@@ -1,0 +1,152 @@
+@use '../mixins';
+@use '../variables';
+
+li{
+    list-style-type: none;
+}
+
+.left-bar{
+
+    /* border: dotted 1px black; */
+    height: 100%;
+    padding: 15px;
+    width: 280px;
+}
+
+.links-list {
+    color: black;
+    text-decoration: none;
+}
+.nav-left{
+    display: flex;
+    justify-content: start;
+}
+.navigation-links{ 
+    li{
+        display: flex;
+        justify-content: start;
+        margin: 20px 0px;
+        
+    }
+}
+
+li, a{
+    :hover{
+        background-color: rgba(121, 201, 255, .5);
+        color: blue;
+    }
+}
+
+main{
+   text-align: center;
+}
+
+.social-media-icons{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    a{
+        margin: 30px 10px;
+    }
+}
+
+.second-nav-title{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 20px;
+    margin: 30px 10px;
+    text-align: start;
+
+}
+
+.second-nav-ul{
+    li {
+        display: flex;
+        justify-content: start;
+        margin: 20px 0px;
+    }
+}
+
+.header-nav2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tags{
+    font-weight: 700;
+}
+
+.space-tags{
+   /*  border:solid 1px black; */
+    height: 7rem;
+    max-width: 100%;
+
+    gear-svg{
+        color: rgb(46, 46, 46)
+    }
+}
+
+.dev-community{
+    border: solid 2px rgb(235, 238, 238);
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.community{
+    display: flex;
+    justify-content: space-between;
+/*     border: solid 1px black; */
+    margin: 10px 0px;
+    max-width: 90%;
+}
+
+
+.title-community{
+    color: rgb(162,133,105);
+    font-weight: 100;
+}
+
+.dots-menu{
+    height: 15px;
+    width: 15px;
+}
+
+.tag-img-sr{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 15px;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.forem{
+    display: flex;
+    justify-content: space-between;
+/*     border: solid 1px black; */
+    margin: 10px 0px;
+    max-width: 90%;
+}
+
+.title-forem{
+    color: rgb(162,133,105);
+    font-weight: 100;
+}
+
+.dev-forem{
+    border: solid 2px rgb(235, 238, 238);
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tag-img-sr-2{
+    display: flex;
+    align-self: center;
+    border-radius: 5px;
+    max-height: 90%;
+    max-width: 90%;
+}
