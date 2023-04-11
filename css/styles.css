@@ -645,7 +645,6 @@ main {
 
 .right-nav-post {
   display: flex;
-  align-self: flex-end;
   justify-content: space-between;
   /* border: dashed blue 1px; */
   height: 100%;
