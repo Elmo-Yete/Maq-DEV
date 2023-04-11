@@ -71,6 +71,42 @@ main{
         .secondTitle{
             
         }
+        .imgNiño{
+            width: 100%;
+        }
+        .thirdTitle{
+            margin-top: 2rem;
+        }
+        .imgCommunity {
+            width: 100%;
+        }
+        .firstParaBorder {
+            font-family:  monospace;
+            padding-left: 2rem;
+            padding-right: 4rem;
+            margin-left: 4rem;
+            border-left: 2px solid rgb(211, 209, 209);
+        }
+        .linkInterest{
+            text-align: start;
+            font-size:1rem;
+            letter-spacing: 6px;
+        }
+        .someOtherTasks{
+            li{
+                list-style-type: disc;
+                font-family: monospace;
+            }
+        }
+        .imgCorona{
+            width: 100%;
+        }
+        .what {
+            text-align: start;
+        }
+    }
+    .userComment{
+        font-size: 12px;
     }
 
     .litlePostView{
